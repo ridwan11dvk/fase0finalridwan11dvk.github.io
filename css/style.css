@@ -1,0 +1,81 @@
+body {
+    background-color: springgreen;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Irish Grover', cursive;
+    color: red;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Irish Grover', cursive;
+    color: black;
+    margin: 10px;
+}
+
+h3{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Irish Grover', cursive;
+    color: white;
+    margin: 10px;
+}
+
+button {
+    background-color: #ffffff; /* Green */
+    border: none;
+    color: black;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+    
+}
+
+.tanah {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.tanah::after {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 100px;
+    background: url(../img/duit.png) bottom right no-repeat;
+    background-size: 60%;
+    position: absolute;
+    bottom: -10px;
+}
+
+.tikus { 
+    width: 100%;
+    height: 100%;
+    background: url(../img/tikusberdasi.png) bottom center no-repeat;
+    background-size: 50%; 
+    position: absolute;
+    top: 100px;
+    transition: top 0.3s ;
+    cursor: grab;
+}
+
+.tanah.muncul .tikus{
+    top: -18px;
+}
